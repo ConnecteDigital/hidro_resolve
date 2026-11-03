@@ -27,7 +27,7 @@ export function whatsappUrl(message: string = DEFAULT_WHATSAPP_MESSAGE) {
 }
 
 // Tag do Google (gtag.js). Deixe vazio até ter o ID (ex.: 'G-XXXXXXX' ou 'AW-XXXXXXX').
-export const googleTagId = '';
+export const googleTagId = 'AW-18553706754';
 
 // Contêiner do Google Tag Manager (ex.: 'GTM-XXXXXXX'). Vazio = não instala.
-export const gtmId = '';
+export const gtmId = 'GTM-P35JWPPN';
