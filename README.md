@@ -19,7 +19,7 @@ npm run build    # gera dist/
 | Cidades atendidas | `src/data/cidades.ts` |
 | Posts do blog | `src/content/blog/*.md` |
 | Fotos dos serviços | `fotos/<serviço>/` (ver `fotos/README.md`) |
-| Logo (provisório em SVG) | `src/components/Logo.astro` e `public/logo.png` |
+| Logo (PNG sem fundo) | `src/assets/logo.png` (site) e `public/logo.png` (Google/compartilhamento) |
 
 Cada serviço vira `/servicos/<slug>/`, cada cidade vira `/desentupidora-em-<slug>/` e cada post vira `/blog/<arquivo>/`. O sitemap é gerado automaticamente.
 
