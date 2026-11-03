@@ -1,22 +1,21 @@
 import type { ImageMetadata } from 'astro';
 
-// Uma foto por serviço (src/assets/fotos/<slug>.jpg). Enquanto não houver fotos próprias,
-// use apenas imagens com licença de uso comercial (ex.: Unsplash, Pexels) e nunca do Google Imagens.
+// Uma foto por serviço (src/assets/fotos/<slug>.jpg). Origem de cada foto em fotos/CREDITOS.md.
 // Os originais ficam em fotos/<slug>/ na raiz do repositório (ver fotos/README.md).
 // Enquanto um serviço não tiver foto, o site mostra o ícone do serviço no lugar.
 const arquivos = import.meta.glob<{ default: ImageMetadata }>('../assets/fotos/*.jpg', { eager: true });
 
 const alts: Record<string, string> = {
-  'desentupimento-de-pia': 'Mão com luva limpando pia de cozinha de inox',
+  'desentupimento-de-pia': 'Profissional desentupindo pia com desentupidor',
   'desentupimento-de-vaso-sanitario': 'Vaso sanitário branco em banheiro',
-  'desentupimento-de-ralo': 'Banheiro com box de vidro e ralo de chuveiro',
-  'desentupimento-de-cano': 'Profissional trabalhando em conexão de tubulação',
-  'desentupimento-de-esgoto': 'Trabalhadores fazendo manutenção em tubulação enterrada',
-  'desentupimento-de-rede-de-esgoto': 'Galeria de rede de drenagem e esgoto',
-  'desentupimento-de-coluna': 'Prédio residencial de vários andares',
-  hidrojateamento: 'Jato de água em alta pressão usado na limpeza',
-  'limpeza-de-fossa': 'Caminhão-tanque para esgotamento',
-  'limpeza-de-caixa-de-gordura': 'Cozinha industrial com panelas no fogão',
+  'desentupimento-de-ralo': 'Desentupimento de ralo com cabo de mola',
+  'desentupimento-de-cano': 'Máquina rotativa desentupindo cano de esgoto',
+  'desentupimento-de-esgoto': 'Desentupimento de esgoto com mangueira de alta pressão',
+  'desentupimento-de-rede-de-esgoto': 'Hidrojateamento de rede de esgoto pelo poço de visita',
+  'desentupimento-de-coluna': 'Desentupimento de coluna com hidrojateamento pela pia da cozinha',
+  hidrojateamento: 'Hidrojateamento de tubulação com jato de água em alta pressão',
+  'limpeza-de-fossa': 'Caminhão limpa fossa fazendo a sucção com mangueira',
+  'limpeza-de-caixa-de-gordura': 'Profissional fazendo limpeza de caixa de gordura',
 };
 
 export interface Foto {
