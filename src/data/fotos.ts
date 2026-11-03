@@ -7,16 +7,16 @@ import type { ImageMetadata } from 'astro';
 const arquivos = import.meta.glob<{ default: ImageMetadata }>('../assets/fotos/*.jpg', { eager: true });
 
 const alts: Record<string, string> = {
-  'desentupimento-de-pia': 'Desentupimento de pia de cozinha',
-  'desentupimento-de-vaso-sanitario': 'Desentupimento de vaso sanitário em banheiro residencial',
-  'desentupimento-de-ralo': 'Desentupimento de ralo e limpeza de caixa sifonada',
-  'desentupimento-de-cano': 'Desentupimento de cano com máquina de cabo rotativo',
-  'desentupimento-de-esgoto': 'Desentupimento de esgoto pela caixa de inspeção',
-  'desentupimento-de-rede-de-esgoto': 'Limpeza de rede de esgoto de condomínio com hidrojateamento',
-  'desentupimento-de-coluna': 'Desentupimento de coluna de esgoto em prédio',
-  hidrojateamento: 'Hidrojateamento de tubulação com água em alta pressão',
-  'limpeza-de-fossa': 'Caminhão limpa fossa fazendo o esgotamento de fossa séptica',
-  'limpeza-de-caixa-de-gordura': 'Limpeza de caixa de gordura',
+  'desentupimento-de-pia': 'Mão com luva limpando pia de cozinha de inox',
+  'desentupimento-de-vaso-sanitario': 'Vaso sanitário branco em banheiro',
+  'desentupimento-de-ralo': 'Banheiro com box de vidro e ralo de chuveiro',
+  'desentupimento-de-cano': 'Profissional trabalhando em conexão de tubulação',
+  'desentupimento-de-esgoto': 'Trabalhadores fazendo manutenção em tubulação enterrada',
+  'desentupimento-de-rede-de-esgoto': 'Galeria de rede de drenagem e esgoto',
+  'desentupimento-de-coluna': 'Prédio residencial de vários andares',
+  hidrojateamento: 'Jato de água em alta pressão usado na limpeza',
+  'limpeza-de-fossa': 'Caminhão-tanque para esgotamento',
+  'limpeza-de-caixa-de-gordura': 'Cozinha industrial com panelas no fogão',
 };
 
 export interface Foto {
