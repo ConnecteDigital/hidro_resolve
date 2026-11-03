@@ -1,0 +1,30 @@
+---
+// Logo provisório em SVG (marca + nome). Quando o logo oficial chegar, troque este componente
+// por uma <Image> do arquivo e substitua public/logo.png.
+interface Props {
+  width?: number;
+  class?: string;
+}
+const { width = 200, class: className } = Astro.props;
+---
+
+<svg
+  class:list={['logo', className]}
+  width={width}
+  viewBox="0 0 260 64"
+  role="img"
+  aria-label="Hidro Resolve Desentupidora 24h"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="logo-gota" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3fe0c9" />
+      <stop offset="1" stop-color="#0a8f86" />
+    </linearGradient>
+  </defs>
+  <path d="M28 4C28 4 9 26 9 39a19 19 0 0 0 38 0C47 26 28 4 28 4z" fill="url(#logo-gota)" />
+  <path d="M17 37c3.7-3 7.3-3 11 0s7.3 3 11 0" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" />
+  <path d="M19 45c3-2.4 6-2.4 9 0s6 2.4 9 0" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" opacity=".75" />
+  <text x="60" y="34" fill="currentColor" font-family="'Barlow Condensed', 'Arial Narrow', sans-serif" font-weight="800" font-size="31" letter-spacing="0.5">HIDRO RESOLVE</text>
+  <text x="61" y="54" fill="#3fe0c9" font-family="'Barlow Condensed', 'Arial Narrow', sans-serif" font-weight="700" font-size="14.5" letter-spacing="3.2">DESENTUPIDORA 24H</text>
+</svg>
